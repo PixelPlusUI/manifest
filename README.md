@@ -17,7 +17,7 @@ familiar with [Repo](https://source.android.com/source/using-repo.html) and [Ver
 $ mkdir WORKSPACE
 $ cd WORKSPACE
 # Install Repo in the created directory
-$ repo init --depth=1 -u https://github.com/PixelPlusUI-Elle/manifest -b eleven
+$ repo init --depth=1 -u https://github.com/PixelPlusUI/manifest -b eleven
 # Download the source
 $ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```

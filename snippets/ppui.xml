@@ -2,7 +2,7 @@
 <manifest>
 
   <remote name="ppui"
-          fetch="https://github.com/PixelPlusUI-Elle"
+          fetch="https://github.com/PixelPlusUI"
           revision="eleven" />
 
   <!-- Framework repos -->
