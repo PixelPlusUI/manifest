@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="ppui"
+          fetch="https://github.com/PixelPlusUI"
+          revision="tiramisu"/>
+
+  <remote name="ppui-gitlab"
+          fetch="https://gitlab.com/PixelPlus-UI"
+          revision="tiramisu" />
+
+  <remote name="ppui-devices"
+          fetch="https://github.com/PixelPlusUI-Devices"
+          revision="tiramisu" />
+
+  <!-- Framework repos -->
+  <project path="frameworks/av" name="frameworks_av" remote="ppui" />
+  <project path="frameworks/base" name="frameworks_base" remote="ppui" />
+  <project path="frameworks/native" name="frameworks_native" remote="ppui" />
+
+  <!-- General repos -->
+  <project path="art" name="art" remote="ppui" />
+  <project path="bionic" name="bionic" remote="ppui" />
+  <project path="build/make" name="build" remote="ppui">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" remote="ppui" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="build/blueprint" name="build_blueprint" remote="ppui" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="ppui" />
+  <project path="development" name="development" remote="ppui" />
+  <project path="manifest" name="manifest" remote="ppui" />
+  <project path="platform_testing" name="platform_testing" remote="ppui" />
+
+  <!-- Hardware repos -->
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="ppui" />
+
+  <!-- Packages repos -->
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ppui" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="ppui" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="ppui" />
+  <project path="packages/modules/Permission" name="packages_modules_Permission" remote="ppui" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="ppui" />
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="ppui" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="ppui" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="ppui" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="ppui" />
+
+  <!-- System Repos -->
+  <project path="system/core" name="system_core" remote="ppui" />
+  <project path="system/extras" name="system_extras" remote="ppui" />
+  <project path="system/media" name="system_media" remote="ppui" />
+  <project path="system/netd" name="system_netd" remote="ppui" />
+  <project path="system/nfc" name="system_nfc" remote="ppui" />
+  <project path="system/security" name="system_security" remote="ppui" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="ppui" />
+  <project path="system/vold" name="system_vold" remote="ppui" />
+  <project path="system/update_engine" name="system_update_engine" remote="ppui" />
+
+  <!-- Device repos -->
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="ppui" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="ppui" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="ppui" />
+
+  <!--  General repos  -->
+  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="ppui"/>
+  <project path="vendor/aosp" name="vendor_aosp" remote="ppui"/>
+  <project path="vendor/gapps" name="vendor_gapps" remote="ppui-gitlab" clone-depth="1"/>
+  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="ppui"/>
+  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="ppui"/>
+
+</manifest>	  
+
