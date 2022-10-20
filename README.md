@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.imgur.com/WdaXqHe.png" />
+  <img src="https://i.imgur.com/7MhYAxh.png" />
 </p>
 
 # PixelPlusUI [![Download PixelPlusUI Builds](https://img.shields.io/sourceforge/dt/pixelplusui-project.svg)](https://ppui.site/download)
